@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans';
+}
+
+header {
+  margin: 35px;
+}
+
+h1 {
+  font-family: 'Raleway';
+  -webkit-transition: -webkit-transform 500ms ease-in;
+  transition: -webkit-transform 500ms ease-in;
+  transition: transform 500ms ease-in;
+  transition: transform 500ms ease-in, -webkit-transform 500ms ease-in;
+}
+
+h1:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  margin-right: 60px;
+}
+
+nav ul li {
+  margin: 0 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+  color: #3406db;
+}
+
+.contents {
+  margin: 0 6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.intro .txt {
+  padding-top: 60px;
+}
+
+.txt {
+  width: 50%;
+}
+
+.txt h1 {
+  font-size: 40px;
+  padding: 10px;
+}
+
+.txt p {
+  width: 550px;
+  padding: 10px;
+}
+
+.txt .email {
+  padding: 10px;
+}
+
+.sub-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sub-email .sub {
+  margin: 10px;
+}
+
+input[type=email] {
+  width: 300px;
+  padding: 10px 10px;
+}
+
+input[type=submit] {
+  width: 200px;
+  padding: 10px;
+  color: white;
+  background: #3065f8;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background: #6797e0;
+}
+
+.img1, .img2 {
+  width: 50%;
+  text-align: center;
+}
+
+.img1 img, .img2 img {
+  width: 36em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.img-top {
+  line-height: 11px;
+}
+
+.img-top img {
+  width: 100%;
+}
+
+.review {
+  background: #f6f6fe;
+  padding: 9px;
+}
+
+.review h1 {
+  font-size: 45px;
+}
+
+.link {
+  margin-left: 10px;
+  color: #3c9f8f;
+  border-bottom: 2px solid #3c9f8f;
+}
+
+.p-review {
+  margin: 20px 9px;
+  padding: 25px;
+  background-color: white;
+  width: 30em;
+  border-radius: 7px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.p-review img {
+  margin-left: 11px;
+}
+
+.p-review p {
+  width: 25em;
+}
+
+.p-review .card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.p-review .card-info img {
+  border-radius: 70px;
+  height: 50px;
+}
+
+.p-review .card-info ul {
+  font-size: 12px;
+  list-style-type: none;
+  margin-left: 12px;
+}
+
+.p-review .card-info h2 {
+  font-size: 15px;
+}
+
+.get-access {
+  background: #585989;
+  padding: 100px;
+}
+
+.get-access .contents {
+  margin: 5px;
+}
+
+.get-access h1 {
+  color: #f6f6fe;
+}
+
+.get-access p {
+  color: #bfbfbf;
+}
+
+.get-access .txt-area {
+  width: 50%;
+  line-height: 50px;
+}
+
+.get-access .txt-area .access {
+  float: right;
+}
+
+.get-access input[type=email] {
+  width: 400px;
+  padding: 10px 10px;
+}
+
+footer {
+  background: #070439;
+  color: white;
+  padding: 70px;
+}
+
+footer .contacts {
+  margin-top: 15px;
+  margin-right: 80px;
+  line-height: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer img {
+  -webkit-filter: invert(100%) sepia(14%) saturate(7471%) hue-rotate(287deg) brightness(117%) contrast(115%);
+          filter: invert(100%) sepia(14%) saturate(7471%) hue-rotate(287deg) brightness(117%) contrast(115%);
+}
+
+footer .phone-email img {
+  -webkit-filter: none;
+          filter: none;
+  margin-right: 20px;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul a {
+  color: white;
+}
+
+footer .media-icon img {
+  width: 50px;
+}
+
+@media (max-width: 1440px) {
+  body {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
+@media (max-width: 654px) {
+  body {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  nav .logo img {
+    width: 80%;
+  }
+  nav ul {
+    margin-right: 0;
+  }
+  nav ul li {
+    margin-right: 0px;
+  }
+  .contents {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .txt {
+    text-align: center;
+    width: 100%;
+  }
+  .txt p {
+    width: 100%;
+    font-size: 20px;
+  }
+  .intro input[type=email] {
+    width: 400px;
+    padding: 16px;
+    border-radius: 4px;
+    border: 1px solid black;
+  }
+  .intro input[type=submit] {
+    width: 400px;
+    padding: 16px;
+  }
+  .img1 img, .img2 img {
+    width: 30em;
+  }
+  .sub-email {
+    display: block;
+  }
+  .review {
+    padding: 30px;
+  }
+  .review h1 {
+    font-size: 23px;
+  }
+  .review .txt {
+    text-align: left;
+  }
+  .review .txt .link {
+    margin-left: 171px;
+  }
+  .review .txt p {
+    width: 110%;
+    color: #979595;
+    margin-left: -20px;
+  }
+  .review .txt .p-review {
+    margin: 20px 2px;
+    padding: 25px;
+    width: 28em;
+  }
+  .review .txt .p-review p {
+    color: black;
+    width: 24em;
+    font-size: 19px;
+    padding-left: 10%;
+  }
+  .get-access {
+    padding: 40px;
+    height: 450px;
+  }
+  .get-access .contents {
+    display: block;
+  }
+  .get-access .txt-area {
+    width: 100%;
+    line-height: 60px;
+  }
+  .get-access .txt-area .access {
+    float: none;
+    text-align: center;
+  }
+  .get-access .txt-area .sub {
+    text-align: center;
+  }
+  .get-access .txt-area input[type=submit] {
+    width: 394px;
+    padding: 16px;
+  }
+  .get-access .txt-area input[type=email] {
+    width: 394px;
+    padding: 16px;
+    border-radius: 4px;
+    border: none;
+  }
+  footer .contacts {
+    display: block;
+    margin-right: 0;
+  }
+  footer .contacts .media-icon {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=main.css.map */

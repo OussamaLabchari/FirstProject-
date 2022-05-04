@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Open Sans';
+    
+    
+}
+header{
+    margin: 35px;
+}
+h1{
+    font-family: 'Raleway';
+    transition: transform 500ms ease-in;
+}
+h1:hover{
+    transform:scale(1.1);
+}
+//navigation-bar
+nav{
+    display: flex;
+    justify-content: space-between;
+
+    ul{
+        display: flex;
+        list-style-type: none;
+        margin-right: 60px;
+        li{
+            margin:0 30px;
+        }
+    }
+}
+//all links button
+a{
+    text-decoration: none;
+    
+}
+a:hover{
+    cursor: pointer;
+    color: hsl(253, 95%, 44%);
+    
+
+}
+.contents{
+    margin:0 6%;
+    
+    display: flex;
+}
+.intro .txt{
+    padding-top: 60px;
+}
+//all text
+.txt{
+    width: 50%;
+    h1{
+        font-size: 40px;
+        padding: 10px;
+    }
+    p{
+        width: 550px;
+        padding: 10px;
+    }
+    .email{
+        padding: 10px;
+    }
+}
+.sub-email{
+    display: flex;
+    .sub{
+        margin: 10px;
+    }
+}
+// style of email box && btn-submit
+input[type=email]{
+    width: 300px;
+    padding: 10px 10px;
+    
+}
+input[type=submit]{
+    width: 200px;
+    padding: 10px ;
+    color: white;
+    background: hsl(224, 93%, 58%);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+input[type=submit]:hover{
+    background: hsl(216, 66%, 64%);
+    
+}
+//images
+.img1,.img2{
+    width: 50%;
+    text-align: center;
+    
+    img{
+        width: 36em;
+        justify-content: center;
+        
+
+    }
+}
+.img-top{
+    line-height: 11px;
+    img{
+        width: 100%;
+    }
+}
+//reviw section 
+.review{
+    background:hsl(240, 75%, 98%) ;
+    padding: 9px;
+
+    h1{
+        font-size: 45px ;
+    }
+    
+}
+.link{
+    margin-left: 10px;
+    color: hsl(170, 45%, 43%);
+    border-bottom: 2px solid hsl(170, 45%, 43%);
+    
+}
+.p-review{
+    margin:20px 9px;
+    padding: 25px;
+    background-color: white;
+    width: 30em;
+    border-radius: 7px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    img{
+        margin-left: 11px;
+    }
+    p{
+        width:25em;
+    }
+    .card-info{
+        display: flex;
+        img{
+            border-radius: 70px;
+            height: 50px;
+        }
+        ul{
+            font-size: 12px;
+            list-style-type: none;
+            margin-left: 12px;
+        }
+        h2{
+            font-size: 15px;
+        }
+    }
+}
+
+//get access style
+.get-access{
+    background: hsl(238, 22%, 44%);
+    padding: 100px;
+    .contents{
+        margin: 5px;
+    }
+    h1{
+        color: hsl(240, 75%, 98%);
+    }
+    p{
+        color: hsl(0, 0%, 75%);
+    }
+    .txt-area{
+        width: 50%;
+        line-height: 50px;
+        .access{
+            float: right;
+        }
+    }
+    input[type=email]{
+        width: 400px;
+        padding: 10px 10px;
+        
+    }
+}
+
+// footer 
+footer{
+    background: hsl(243, 87%, 12%);
+    color: white;
+    padding: 70px;
+
+    .contacts{
+        margin-top: 15px;
+        margin-right: 80px;
+        line-height: 2em;
+        
+        display: flex;
+        justify-content: space-between;
+    }
+    img{
+        filter: invert(100%) sepia(14%) saturate(7471%) hue-rotate(287deg) brightness(117%) contrast(115%);
+    }
+    .phone-email{
+        img{
+            filter: none;
+            margin-right: 20px;
+        }
+    }
+    ul{
+        list-style-type: none;
+
+        a{
+            color: white;
+        }
+    }
+    .media-icon{
+        img{
+            width: 50px;
+        }
+    }   
+}
+@media (max-width:1440px){
+    body{
+        width: fit-content;
+    }
+}
+
+
+@media(max-width:654px){
+    body{
+        width:fit-content;
+    }
+    nav{
+        .logo{
+            img{
+                width: 80%;
+            }
+        }
+        ul{
+            margin-right: 0;
+            li{
+                margin-right: 0px;
+            }
+        }
+    }
+    .contents{
+        flex-direction: column-reverse;
+        
+    }
+    .txt{
+        text-align: center;
+        width: 100%;
+        p{
+            width: 100%;
+            font-size: 20px;
+        }
+    }
+    .intro{
+        input[type=email]{
+            width: 400px;
+            padding: 16px;
+            border-radius: 4px;
+            border: 1px solid black;
+        }
+        input[type=submit]{
+            width: 400px;
+            padding: 16px;
+        }
+    }
+    .img1,.img2{
+        img{
+            width: 30em;
+        }
+    }
+    .sub-email{
+        display: block;
+    }
+    .review {
+        padding: 30px;
+        h1{
+            font-size: 23px;
+        }
+        .txt{
+            text-align:left;
+            .link{
+                margin-left: 171px;
+            }
+            p{
+                width: 110%;
+                color: hsl(0, 1%, 59%);
+                margin-left: -20px;
+            }
+            .p-review{
+                p{
+                    color: black;
+                    width: 24em;
+                    font-size: 19px;
+                    padding-left: 10%;
+                }
+                margin:20px 2px;
+                padding: 25px;
+                width: 28em;
+                
+            }
+        }
+    }
+    .get-access{
+        padding: 40px;
+        height: 450px;
+        .contents{
+            display: block;
+        }
+        .txt-area{
+            .access{
+                float: none;
+                text-align: center;
+            }
+            width: 100%;
+            line-height: 60px;
+            .sub{
+                text-align: center;
+            }
+            input[type=submit]{
+                width: 394px;
+                padding: 16px;
+            }
+            input[type=email]{
+                width: 394px;
+                padding: 16px;
+                border-radius: 4px;
+                border: none;
+            }
+        }
+    }
+
+    footer{
+        .contacts{
+            display: block;
+            margin-right: 0;
+            .media-icon{
+                text-align: center;
+            }
+        }
+    }
+}
